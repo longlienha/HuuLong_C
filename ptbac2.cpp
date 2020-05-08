@@ -18,7 +18,7 @@ int main(){
 				printf("pt vo nghiem");
 			}
 		}else{
-			x1=-c/b;
+			x1=float(-c)/b;
 			printf("x=%f",x1);
 		}
 	}else{
@@ -26,11 +26,11 @@ int main(){
 		if(delta<0){
 			printf("vo nghiem");
 		}else if(delta==0){
-			x1=-b/(2*a);
+			x1=float(-b)/(2*a);
 			printf("pt co nghiem kep x=%f",x1);
 		}else{
-			x1=(-b-sqrt(delta))/(2*a);
-			x2=(-b+sqrt(delta))/(2*a);
+			x1=(float)(-b-sqrt(delta))/(2*a);
+			x2=(float)(-b+sqrt(delta))/(2*a);
 			printf("x1= %f\n",x1);
 			printf("x1= %f",x2);
 		}
