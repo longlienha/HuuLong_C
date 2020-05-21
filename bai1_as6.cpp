@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main(){
-	int a=0,num=0,dem=0;
-	printf("nhap vao so phan tu mang: ", &a);
+	int a=0,num=0;
+	printf("nhap vao so phan tu mang: ");
 	scanf("%d",&a);
 	int arr[a];
 	for(int i=0;i<a;i++){
@@ -13,10 +13,9 @@ int main(){
 	for(int i=0;i<a;i++){
 		if(arr[i]%2 != 0){
 			num=arr[i];
-			dem++;
 		}
 	}
-	if(dem==0){
+	if(num == 0){
 		printf("mang khong co so le");
 	}else printf("so le cuoi la %d",num);
 }

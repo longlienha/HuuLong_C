@@ -10,8 +10,8 @@ int main(){
 		scanf("%d",&arr[i]);
 		for(int j=0;j<i;j++){
 			if(arr[i]==arr[j]){
-				printf("bi trung xin nhap lai: ");
-				scanf("%d",&arr[i]);
+				i--;
+				break;
 			}
 		}
 	}
