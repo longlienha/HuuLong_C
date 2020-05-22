@@ -22,6 +22,11 @@ int main(){
 			p=(int *)realloc(p,1*sizeof(int));
 			j++;
 		}
+		if(i==n-1){
+			p=(int *)realloc(p,1*sizeof(int));
+			j++;
+			*(p+j)=sum;
+		}
 	}
 	
 	int max=*(p+0);
